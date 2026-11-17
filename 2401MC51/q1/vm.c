@@ -480,7 +480,7 @@ setwrite(uint va)
   }
   
   // Add write permission
-  *pte = (*pte | (~PTE_W));
+  *pte = (*pte | (PTE_W));
   
   cprintf("Page set to write also\n");
   return 0;
